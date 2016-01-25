@@ -1,0 +1,9 @@
+[user]
+	name = Pablo
+	email = pettinarip@gmail.com
+[alias]
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+	b = branch -l
+	co = checkout
+[core]
+	editor = subl -w
