@@ -1,9 +1,11 @@
-# dots
+# dots files
 
-Instalar lxapearance
-Instalar arandr
-Instalar ranger
-Instalar i3blocks
-Instalar thunar
-Instalar feh
-Instalar compton
+Instalar:
+
+  - lxapearance
+  - arandr
+  - ranger
+  - i3blocks
+  - thunar
+  - feh
+  - compton
