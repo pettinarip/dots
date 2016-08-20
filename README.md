@@ -9,3 +9,4 @@ Instalar:
   - thunar
   - feh
   - compton
+  - playerctl
