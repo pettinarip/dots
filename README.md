@@ -19,4 +19,4 @@ Instalar:
 ### TODO
 
 - Manejar plug/unplug de monitores y refresh automatico de las resoluciones y workspaces
-
+- Hacer startup configs / assignments / layouts

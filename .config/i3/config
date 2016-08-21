@@ -159,10 +159,6 @@ workspace $workspace8 output $monitor2
 workspace $workspace9 output $monitor2
 workspace $workspace10 output $monitor2
 
-# Program Workspaces
-assign [class="google-chrome"] $workspace1
-assign [class="Spotify"] $workspace10
-
 # Widow Colours
 #                         border  background text    indicator
   client.focused          $base01 $base01    $base07 $base0F
@@ -247,3 +243,10 @@ exec spotify
 exec_always feh --bg-scale ~/Pictures/GlHQ5vO.jpg
 exec_always xrandr --output HDMI1 --primary --mode 1920x1200 --pos 0x0 --rotate normal --output VIRTUAL1 --off --output eDP1 --mode 1368x768 --pos 1920x208 --rotate normal
 exec_always compton -f
+
+# Program Workspaces
+assign [class="google-chrome"] $workspace1
+# worked with Spotify 0.9
+assign [class="Spotify"] $workspace10
+# works with Spotify 1.0.x
+for_window [class="Spotify"] move to workspace $workspace10 
