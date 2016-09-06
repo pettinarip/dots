@@ -243,6 +243,7 @@ exec spotify
 exec_always feh --bg-scale ~/Pictures/GlHQ5vO.jpg
 exec_always xrandr --output HDMI1 --primary --mode 1920x1200 --pos 0x0 --rotate normal --output VIRTUAL1 --off --output eDP1 --mode 1368x768 --pos 1920x208 --rotate normal
 exec_always compton -f
+exec --no-startup-id nm-applet
 
 # Program Workspaces
 assign [class="google-chrome"] $workspace1
