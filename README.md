@@ -6,7 +6,7 @@ Actualizar bash
 $ source ~/.bashrc
 ```
 ### i3
-Instalar:
+Dependencias:
 
 - lxapearance
 - arandr
@@ -15,6 +15,7 @@ Instalar:
 - thunar
 - feh
 - compton
+- playerctl
 
 ### TODO
 
