@@ -7,6 +7,7 @@ $ source ~/.bashrc
 ```
 ### fonts
 [Yosemite San Francisco Font](https://github.com/supermarin/YosemiteSanFranciscoFont)
+
 [Fontawesome](http://fontawesome.io/) | [cheatsheet](http://fontawesome.io/cheatsheet/)
 
 Poner las `.ttf` en `~/.fonts`.
