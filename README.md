@@ -16,6 +16,7 @@ Actualizar `sudo fc-cache -f -v`.
 ### i3
 Dependencias:
 
+- i3-gaps
 - i3blocks
 - lxapearance
 - playerctl

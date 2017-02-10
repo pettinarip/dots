@@ -277,5 +277,5 @@ assign [class="Spotify"] $workspace10
 for_window [class="Spotify"] move to workspace $workspace10 
 
 gaps inner 10
-gaps outer 5
+gaps outer 0
 smart_gaps on
