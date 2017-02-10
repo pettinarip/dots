@@ -24,10 +24,10 @@ set $base0E #c0b7f9
 set $base0F #fcc09e
 
 set $workspace1 "1: "
-set $workspace2 "2: "
+set $workspace2 "2: "
 set $workspace3 "3: "
-set $workspace4 "4: "
-set $workspace5 "5: "
+set $workspace4 "4: "
+set $workspace5 "5: "
 set $workspace6 "6: "
 set $workspace7 "7: "
 set $workspace8 "8: "
@@ -254,6 +254,7 @@ bindsym $mod+Pause mode "$mode_system"
 bar {
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
         tray_output primary
+        font xft:Droid Sans Mono, FontAwesome 8
     colors {
           separator $base03
           background $base01
