@@ -20,6 +20,7 @@ Dependencias:
 - i3blocks
 - lxapearance
 - playerctl
+- xfce4-terminal
 - arandr
 - feh
 - compton
