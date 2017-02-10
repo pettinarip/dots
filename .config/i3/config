@@ -284,6 +284,8 @@ assign [class="Spotify"] $workspace10
 # works with Spotify 1.0.x
 for_window [class="Spotify"] move to workspace $workspace10 
 
+for_window [class="^.*"] border pixel 0
+
 gaps inner 10
 gaps outer 0
 smart_gaps on
