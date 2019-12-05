@@ -1,32 +1,40 @@
 # dots files
 
-### bash
-Actualizar bash
-```sh
-$ source ~/.bashrc
-```
-### fonts
-[Yosemite San Francisco Font](https://github.com/supermarin/YosemiteSanFranciscoFont)
+### Install fonts
 
 [Fontawesome](http://fontawesome.io/) | [cheatsheet](http://fontawesome.io/cheatsheet/)
 
-Poner las `.ttf` en `~/.fonts`.
-Actualizar `sudo fc-cache -f -v`.
-
 ### i3
-Dependencias:
+
+Dependencies:
 
 - i3-gaps
 - i3blocks
-- lxapearance
 - playerctl
-- xfce4-terminal
+- zsh
+- oh-my-zsh
+- terminator
 - arandr
 - feh
 - compton
 
+### Enable touchpad
+
+```
+# https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/
+sudo mkdir -p /etc/X11/xorg.conf.d && sudo tee <<'EOF' /etc/X11/xorg.conf.d/90-touchpad.conf 1> /dev/null
+Section "InputClass"
+        Identifier "touchpad"
+        MatchIsTouchpad "on"
+        Driver "libinput"
+        Option "Tapping" "on"
+        Option "NaturalScrolling" "on"
+        Option "ScrollMethod" "twofinger"
+EndSection
+
+EOF
+```
+
 ### TODO
 
-- Manejar plug/unplug de monitores y refresh automatico de las resoluciones y workspaces
-- Hacer startup configs / assignments / layouts
-- Instalar conky
+- Switching display modes

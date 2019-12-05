@@ -1,0 +1,53 @@
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "name": "petty@petty-msi: ~",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Terminator$",
+       "instance": "^terminator$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "none",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "none",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "name": "petty@petty-msi: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Terminator$",
+               "instance": "^terminator$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "none",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "name": "petty@petty-msi: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Terminator$",
+               "instance": "^terminator$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
