@@ -44,6 +44,12 @@ set $monitor1 "eDP-1-1"
 
 exec --no-startup-id bash 'xrandr --output $monitor1 --primary'
 
+# i3-gaps
+gaps inner 10
+gaps outer 0
+smart_borders on
+new_window none
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -197,7 +203,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym $mod+Shift+x exec i3lock --blur=3 -c "$back"
+################### MODE_RESIZE ######################
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -223,6 +229,8 @@ mode "resize" {
   bindsym Escape mode "default"
   bindsym $mod+r mode "default"
 }
+
+################### BAR APPEARANCE ######################
 
 bindsym $mod+r mode "resize"
 
@@ -250,6 +258,8 @@ bar {
   }
 }
 
+################### MODE_DISPLAY ######################
+
 set $displayMode "Set display mode [w]ork [l]aptop [h]ome"
 bindsym $mod+x mode $displayMode
 mode $displayMode {
@@ -261,11 +271,23 @@ mode $displayMode {
     bindsym Escape mode "default"
 }
 
-# i3-gaps stuff
-gaps inner 10
-gaps outer 0
-smart_borders on
-new_window none
+################### MODE_SYSTEM ######################
+
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+
+bindsym $mod+Shift+x mode "$mode_system"
+mode "$mode_system" {
+    bindsym l exec --no-startup-id ~/.i3/scripts/i3exit.sh lock, mode "default"
+    bindsym e exec --no-startup-id ~/.i3/scripts/i3exit.sh logout, mode "default"
+    bindsym s exec --no-startup-id ~/.i3/scripts/i3exit.sh suspend, mode "default"
+    bindsym h exec --no-startup-id ~/.i3/scripts/i3exit.sh hibernate, mode "default"
+    bindsym r exec --no-startup-id ~/.i3/scripts/i3exit.sh reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id ~/.i3/scripts/i3exit.sh shutdown, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
 
 #backlight controls (laptop monitor)
 bindsym XF86MonBrightnessDown exec xbacklight -dec 4
