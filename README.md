@@ -17,6 +17,7 @@ Dependencies:
 - arandr
 - feh
 - compton
+- rofi
 
 ### Enable touchpad
 
@@ -37,4 +38,6 @@ EOF
 
 ### TODO
 
-- Switching display modes
+- Create new display layout scripts for work and home to handle multiple monitors
+- Create new bindmode to handle i3 exit modes (restart, shutdown, hibernate, etc)
+- Bind WS to monitors based on each display configs
