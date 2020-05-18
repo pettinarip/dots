@@ -12,7 +12,8 @@ Dependencies:
 - i3blocks
 - playerctl
 - zsh
-- oh-my-zsh
+  - oh-my-zsh
+  - zsh-autosuggestions
 - terminator
 - arandr
 - feh
