@@ -20,6 +20,8 @@ Dependencies:
 - feh
 - compton
 - rofi
+- git
+  - diff-so-fancy
 
 ### Enable touchpad
 
