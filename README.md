@@ -14,6 +14,7 @@ Dependencies:
 - zsh
   - oh-my-zsh
   - zsh-autosuggestions
+  - spaceship-prompt
 - terminator
 - arandr
 - feh
