@@ -40,6 +40,17 @@ EndSection
 EOF
 ```
 
+### nvidia
+
+```
+// check available versions
+ubuntu-drivers devices
+// install lastest version
+sudo ubuntu-drivers autoinstall
+// or a specific version
+sudo apt install nvidia-XXX
+```
+
 ### TODO
 
 - Create new display layout scripts for work and home to handle multiple monitors
